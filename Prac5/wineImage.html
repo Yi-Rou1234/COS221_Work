@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Tomorrow Wine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="wine.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">The Tomorrow Wine</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="wine.html">HOME</a></li>
+        <li><a href="#wine">Wine</a></li>
+        <li><a href="#winefarm">Wine Farm</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container" id="wine">
+  <!-- Dropdown filters -->
+  <h1>Filter By:</h1>
+  <div class="dropdown-filters">
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="wineTypeDropdown" data-toggle="dropdown">
+        Wine Type
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="wineTypeDropdown">
+        <li><a href="#">White wine</a></li>
+        <li><a href="#">Red wine</a></li>
+        <li><a href="#">Rosé wine</a></li>
+        <li><a href="#">Sparkling wine</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="priceRangeDropdown" data-toggle="dropdown">
+        Price Range
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="priceRangeDropdown">
+        <li><a href="#">R200 - R400</a></li>
+        <li><a href="#">R400 - R600</a></li>
+        <li><a href="#">R600 - R800</a></li>
+        <li><a href="#">R800 - R1000</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="qualityDropdown" data-toggle="dropdown">
+        Quality
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="qualityDropdown">
+        <li><a href="#">Acidity</a></li>
+        <li><a href="#">Tannin</a></li>
+        <li><a href="#">Alcohol</a></li>
+        <li><a href="#">Sweetness</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="wineryDropdown" data-toggle="dropdown">
+        Winery
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="wineryDropdown">
+        <li><a href="#">Vineyard Winery</a></li>
+        <li><a href="#">Farm Winery</a></li>
+        <li><a href="#">Micro Winery</a></li>
+        <li><a href="#">Urban Winery</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <!-- Display images here -->
+  <h1>Sneak Peak:</h1>
+  <div class="row">
+    <!-- Assuming you will fetch and iterate through the wine images from the API -->
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="image-placeholder"></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="image-placeholder"></div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="image-placeholder"></div>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="image-placeholder"></div>
+    </div>
+    <!-- Add more columns for additional images as needed -->
+  </div>
+</div>
+<br>
+
+
+<div class="container" id="winefarm">
+  <!-- Wine farm with their wine here -->
+  <h1>Wine farm location with their wines here</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="wine-placeholder">
+        <!-- Image Placeholder -->
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="wine-labels">
+        <h3>Top Wines</h3>
+        <div class="wine-label">
+          <span class="label-name">Wine Label 1</span>
+          <span class="label-description">Description of Wine 1</span>
+        </div>
+        <div class="wine-label">
+          <span class="label-name">Wine Label 2</span>
+          <span class="label-description">Description of Wine 2</span>
+        </div>
+        <div class="wine-label">
+          <span class="label-name">Wine Label 3</span>
+          <span class="label-description">Description of Wine 3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1R86pJezgsviWNjrNxnOz78Axu_sAxxY&ehbc=2E312F" width="640" height="480"></iframe>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="text-center">
+    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p>The Tomorrow Wine, TomorrowWine@gmail.com</a></p> 
+</footer>
+
+</body>
+</html>

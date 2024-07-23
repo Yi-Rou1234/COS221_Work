@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Tomorrow Wine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="signup.js"></script>
+    <link rel="stylesheet" href="wine.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#myPage">The Tomorrow Wine</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="wine.html">HOME</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container" style="background-color: #f1eeee; padding: 5%;">
+        <form id="form" action="validate-signup.php" method="POST">
+            <h1>Sign up for Winery :</h1><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Name :</p><br>
+                    <p>Surname :</p><br>
+                    <p>Username :</p><br>
+                    <p>Email :</p><br>
+                    <p>Password :</p><br>
+                    <p>Confirm Password:</p><br>
+                </div>
+                <div class="col-md-8">
+                    <input class="form-control" id="name" name="name" placeholder="Name" type="text" required><br>
+                    <input class="form-control" id="surname" name="surname" placeholder="Surname" type="text" required><br>
+                    <input class="form-control" id="username" name="username" placeholder="Username" type="text" required><br>
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="text" required><br>
+                    <input class="form-control" id="password1" name="password1" placeholder="Password" type="text" required><br>
+                    <input class="form-control" id="password2" name="password2" placeholder="Re-enter Password" type="text" required><br>
+                    <p id="message"></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit" onclick=validateSignupForm()>Submit</button>
+                        <!-- need to add code to say if they log in, they can access Winery.html -->
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <!-- Footer -->
+    <footer class="text-center" id="footer">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br><br>
+        <p>The Tomorrow Wine, TomorrowWine@gmail.com</a></p> 
+    </footer>
+</body>
+</html>

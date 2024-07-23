@@ -1,0 +1,11 @@
+COS 221 Practical Assignment 1
+Task 6:
+SELECT student_num, COUNT(student_num) 
+FROM borrow
+GROUP BY student_num
+HAVING COUNT(student_num) > 1;
+
+Task 7:
+mysql -u root -p
+mysql> CREATE DATABASE u22561154_bookshopsystem;
+mysql -u root -p u22561154_bookshopsystem < mysqldump-data.sql
